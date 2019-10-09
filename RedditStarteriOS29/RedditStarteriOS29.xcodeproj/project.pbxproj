@@ -13,6 +13,8 @@
 		5884A8BE234E2F9700793C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5884A8BD234E2F9700793C86 /* Assets.xcassets */; };
 		5884A8C1234E2F9700793C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5884A8BF234E2F9700793C86 /* LaunchScreen.storyboard */; };
 		5884A8C4234E2F9700793C86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5884A8C3234E2F9700793C86 /* main.m */; };
+		E828539D234E3F0B009EFF0C /* JRC_Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E828539C234E3F0B009EFF0C /* JRC_Post.m */; };
+		E82853A0234E437E009EFF0C /* JRC_PostController.m in Sources */ = {isa = PBXBuildFile; fileRef = E828539F234E437E009EFF0C /* JRC_PostController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		5884A8C0234E2F9700793C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5884A8C2234E2F9700793C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5884A8C3234E2F9700793C86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E828539B234E3F0B009EFF0C /* JRC_Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_Post.h; sourceTree = "<group>"; };
+		E828539C234E3F0B009EFF0C /* JRC_Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_Post.m; sourceTree = "<group>"; };
+		E828539E234E437E009EFF0C /* JRC_PostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_PostController.h; sourceTree = "<group>"; };
+		E828539F234E437E009EFF0C /* JRC_PostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_PostController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		5884A8CB234E317100793C86 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E828539B234E3F0B009EFF0C /* JRC_Post.h */,
+				E828539C234E3F0B009EFF0C /* JRC_Post.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +108,8 @@
 		5884A8CD234E317F00793C86 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E828539E234E437E009EFF0C /* JRC_PostController.h */,
+				E828539F234E437E009EFF0C /* JRC_PostController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -161,8 +171,9 @@
 		5884A8A6234E2F9200793C86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JRC;
 				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = "Darin Armstrong";
+				ORGANIZATIONNAME = "Jesse Rae";
 				TargetAttributes = {
 					5884A8AD234E2F9200793C86 = {
 						CreatedOnToolsVersion = 11.1;
@@ -206,7 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82853A0234E437E009EFF0C /* JRC_PostController.m in Sources */,
 				5884A8B3234E2F9200793C86 /* AppDelegate.m in Sources */,
+				E828539D234E3F0B009EFF0C /* JRC_Post.m in Sources */,
 				5884A8C4234E2F9700793C86 /* main.m in Sources */,
 				5884A8B6234E2F9200793C86 /* SceneDelegate.m in Sources */,
 			);
@@ -350,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QP48FW2MG5;
+				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/RedditStarteriOS29/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,7 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QP48FW2MG5;
+				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/RedditStarteriOS29/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
