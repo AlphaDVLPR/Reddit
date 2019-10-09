@@ -15,6 +15,8 @@
 		5884A8C4234E2F9700793C86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5884A8C3234E2F9700793C86 /* main.m */; };
 		E828539D234E3F0B009EFF0C /* JRC_Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E828539C234E3F0B009EFF0C /* JRC_Post.m */; };
 		E82853A0234E437E009EFF0C /* JRC_PostController.m in Sources */ = {isa = PBXBuildFile; fileRef = E828539F234E437E009EFF0C /* JRC_PostController.m */; };
+		E82853A3234E567F009EFF0C /* JRC_PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82853A2234E567F009EFF0C /* JRC_PostListTableViewController.swift */; };
+		E82853A5234E5751009EFF0C /* JRC_PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82853A4234E5751009EFF0C /* JRC_PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		E828539C234E3F0B009EFF0C /* JRC_Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_Post.m; sourceTree = "<group>"; };
 		E828539E234E437E009EFF0C /* JRC_PostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_PostController.h; sourceTree = "<group>"; };
 		E828539F234E437E009EFF0C /* JRC_PostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_PostController.m; sourceTree = "<group>"; };
+		E82853A1234E567F009EFF0C /* RedditStarteriOS29-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedditStarteriOS29-Bridging-Header.h"; sourceTree = "<group>"; };
+		E82853A2234E567F009EFF0C /* JRC_PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRC_PostListTableViewController.swift; sourceTree = "<group>"; };
+		E82853A4234E5751009EFF0C /* JRC_PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRC_PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,8 @@
 		5884A8CF234E318E00793C86 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E82853A2234E567F009EFF0C /* JRC_PostListTableViewController.swift */,
+				E82853A1234E567F009EFF0C /* RedditStarteriOS29-Bridging-Header.h */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 		5884A8D2234E31A500793C86 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				E82853A4234E5751009EFF0C /* JRC_PostTableViewCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -177,7 +185,7 @@
 				TargetAttributes = {
 					5884A8AD234E2F9200793C86 = {
 						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -220,6 +228,8 @@
 				E82853A0234E437E009EFF0C /* JRC_PostController.m in Sources */,
 				5884A8B3234E2F9200793C86 /* AppDelegate.m in Sources */,
 				E828539D234E3F0B009EFF0C /* JRC_Post.m in Sources */,
+				E82853A3234E567F009EFF0C /* JRC_PostListTableViewController.swift in Sources */,
+				E82853A5234E5751009EFF0C /* JRC_PostTableViewCell.swift in Sources */,
 				5884A8C4234E2F9700793C86 /* main.m in Sources */,
 				5884A8B6234E2F9200793C86 /* SceneDelegate.m in Sources */,
 			);
@@ -297,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -349,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -365,12 +375,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/RedditStarteriOS29/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DMA.RedditStarteriOS29;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedditStarteriOS29/Controllers/View Controllers/RedditStarteriOS29-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,12 +397,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/RedditStarteriOS29/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DMA.RedditStarteriOS29;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RedditStarteriOS29/Controllers/View Controllers/RedditStarteriOS29-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

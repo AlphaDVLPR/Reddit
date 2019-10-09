@@ -6,13 +6,20 @@
 //  Copyright © 2019 Jesse Rae. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "JRC_Post.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JRC_PostController : NSObject
 
-@property (nonatomic, copy) NSArray
+@property (nonatomic, copy) NSArray<JRC_Post *> *posts;
+
++ (instancetype) shared;
+
+- (void)fetchPosts:(void (^)(BOOL))completion;
+
+- (void)fetchImage:(JRC_Post *)post completion:(void (^) (UIImage * _Nullable))completion;
 
 @end
 
